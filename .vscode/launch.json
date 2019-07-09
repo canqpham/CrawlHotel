@@ -5,16 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "type": "python",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/src/app.js",
+            "program": "${workspaceFolder}/src/app.py",
             "env": {
-                "KAFKA_HOST": "localhost:9092",
-                "KAFKA_TOPIC": "GetData",
+                "KAFKA_HOST": "192.168.12.94:9092",
+                "KAFKA_TOPIC": "find_hotels_crawler",
                 "KAFKA_CONSUMER_GROUP": "GroupTest",
                 "MONGO_CONNECTION_STRING": "mongodb://localhost:27017",
-                "DB_NAME": "Hotels"
+                "MONGO_DB_NAME": "Hotels"
             }
         }
     ]
