@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/src/app.js",
+            "env": {
+                "KAFKA_HOST": "localhost:9092",
+                "KAFKA_TOPIC": "GetData",
+                "KAFKA_CONSUMER_GROUP": "GroupTest",
+                "MONGO_CONNECTION_STRING": "mongodb://localhost:27017",
+                "DB_NAME": "Hotels"
+            }
+        }
+    ]
+}
