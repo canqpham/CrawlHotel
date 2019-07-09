@@ -43,7 +43,6 @@ consumerGroup.on('message', onMessage);
 
 function onMessage(message) {
     const { body } = JSON.parse(message.value)
-    console.log(body)
     request({
         url: findHotelApiHost,
         method: "POST",
