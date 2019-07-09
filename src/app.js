@@ -1,7 +1,5 @@
-const express = require('express')
-var async = require('async');
 var os = require("os");
-const request = require('request');
+var request = require('request');
 var mongodb = require('mongodb');
 var ConsumerGroup = require('kafka-node').ConsumerGroup;
 
